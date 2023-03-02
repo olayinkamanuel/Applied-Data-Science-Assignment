@@ -24,21 +24,21 @@ gdp_data = gdp_data_frame[(gdp_data_frame['Country '].isin(countries))]
 years = [str(year) for year in range(2007, 2014)]
 
 # Retrieve data frame by columns
-gdp_data = gdp_data[['Country '] + years]
+gdp_data = gdp_data[["Country "] + years]
 
 # Make country index
-gdp_data = gdp_data.set_index('Country ').T
+gdp_data = gdp_data.set_index("Country ").T
 
 # Loop through dataframe and create the plots for the gdp
 for country in countries:
     plt.plot(years, gdp_data[country], label=country, marker="o")
 
 # Add plot title and labels
-plt.title('GDP per capita from 2007 to 2014')
+plt.title("GDP per capita of countries (2007 - 2014)")
 
 # Label for the x and y axis
-plt.xlabel('Year')
-plt.ylabel('GDP per capita')
+plt.xlabel("Year")
+plt.ylabel("GDP per capita")
 
 plt.legend()
 
