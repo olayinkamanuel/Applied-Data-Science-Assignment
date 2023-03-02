@@ -25,6 +25,8 @@ plt.pie(gdp_data["2018"], labels=gdp_data["Country "])
 # Title of the plot
 plt.title("Pie Chart for GDP/capita of 10 Countries (2018)")
 
+plt.savefig("gdp per capita pie plot.png")
+
 # Display plots
 plt.show()
 
