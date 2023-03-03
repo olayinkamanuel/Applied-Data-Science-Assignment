@@ -1,5 +1,11 @@
 # -*- coding: utf-8 -*-
 
+"""
+Created on Fri Mar  3 14:51:34 2023
+
+@author: Olayinka Abolade
+"""
+
 # import modules
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -34,7 +40,7 @@ for country in countries:
     plt.plot(years, gdp_data[country], label=country, marker="o")
 
 # Add plot title and labels
-plt.title("GDP per capita of countries (2007 - 2014)")
+plt.title("GDP per capita of 8 countries (2007 - 2014)")
 
 # Label for the x and y axis
 plt.xlabel("Year")
