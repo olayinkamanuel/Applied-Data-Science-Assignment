@@ -1,5 +1,11 @@
 # -*- coding: utf-8 -*-
 
+"""
+Created on Fri Mar  3 14:51:34 2023
+
+@author: Olayinka Abolade
+"""
+
 # import modules
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -20,10 +26,10 @@ gdp_data = gdp_data_frame[(gdp_data_frame['Country '].isin(countries))]
 plt.figure(figsize=(16, 12))
 
 # Plots pie chart
-plt.pie(gdp_data["2018"], labels=gdp_data["Country "])
+plt.pie(gdp_data["2018"], labels=gdp_data["Country "],autopct='%1.1f%%')
 
 # Title of the plot
-plt.title("Pie Chart for GDP/capita of 10 Countries (2018)")
+plt.title("Pie Chart for GDP/capita of 6 Countries (2018)")
 
 plt.savefig("gdp per capita pie plot.png")
 
