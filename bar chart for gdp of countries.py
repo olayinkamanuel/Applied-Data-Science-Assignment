@@ -36,7 +36,7 @@ plt.title("GDP per capita for 10 countries (2015 & 2016)")
 
 # Labels for the x and y axis
 plt.xlabel("Country")
-plt.ylabel("GDP per capita")
+plt.ylabel("GDP per capita in USD")
 
 plt.legend()
 
