@@ -40,11 +40,11 @@ for country in countries:
     plt.plot(years, gdp_data[country], label=country, marker="o")
 
 # Add plot title and labels
-plt.title("GDP per capita of 8 countries (2007 - 2014)")
+plt.title("GDP per capita of 8 countries (2007 - 2013)")
 
 # Label for the x and y axis
 plt.xlabel("Year")
-plt.ylabel("GDP per capita")
+plt.ylabel("GDP per capita in USD")
 
 plt.legend()
 
